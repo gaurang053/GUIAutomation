@@ -12,10 +12,9 @@ Feature: Checkout item from cart
     And Verify that you are on the cart page by the title "Your Bag"
 		Then click on the Checkout button
 		And Verify that you're on the delivery page
-		Then from the "Get Your Order" module
-		And click "From A Collection Point"
-		Then type "London" in the location text box
-		Then click "Search for Collection Points" button
+		Then from the Get Your Order module and click From A Collection Point
+		And type "London" in the location text box
+		And click "Search for Collection Points" button
 		Then from the list, pick any collection point
 		And Verify that correct collection point is selected
 		

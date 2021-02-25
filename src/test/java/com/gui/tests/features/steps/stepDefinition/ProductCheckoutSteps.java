@@ -80,26 +80,20 @@ public class ProductCheckoutSteps {
 	@And("Verify that you're on the delivery page")
 	public void verify_that_you_re_on_the_delivery_page() {
 		String pageTitle  = deliveryPage.verifyDeliveryPageByTitle("");
-		Assert.assertEquals("Page title is matched","Get your order",pageTitle);
+		Assert.assertEquals("Page title is matched","Get your order".toUpperCase(),pageTitle);
 	}
 
-	@Then("from the {string} module")
-	public void from_the_module(String string) {
+	@Then("from the Get Your Order module and click From A Collection Point")
+	public void from_the_module() {
 		deliveryPage.clickOnFromACollectionPoint();
 	}
 
-	@And("click {string}")
-	public void click(String string) {
-		// Write code here that turns the phrase above into concrete actions
-		System.out.println(ProductCheckoutSteps.class.getName());
-	}
-
-	@Then("type {string} in the location text box")
+	@And("type {string} in the location text box")
 	public void type_in_the_location_text_box(String locationName) {
 		deliveryPage.typeAndSelectPickupLocation(locationName);
 	}
 
-	@Then("click {string} button")
+	@And("click {string} button")
 	public void click_button(String string) {
 		deliveryPage.clickOnCollectionPointButton();
 	}
