@@ -68,6 +68,7 @@ src
 
 # Reference Test Report
 Detailed HTML report is attached to the GIT location# https://github.com/gaurang053/GUIAutomation/blob/main/TestReport/site/serenity/index.html
+
 Please download > Test Report > Site Folder
 ![Test Report](TestReport.png)
 ![Test Report](TestReport2.png)
