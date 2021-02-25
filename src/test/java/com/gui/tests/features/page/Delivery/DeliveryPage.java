@@ -32,10 +32,14 @@ public class DeliveryPage extends UIInteractionSteps {
 	}
 
 	@Step
-	public void pickAnyCollectionPoint() {
+	public String pickAnyCollectionPoint() {
+		waitForCondition().until(ExpectedConditions.visibilityOf(find(DeliveryPageLocator.clickShowDetails))).click();
+		String address = find(DeliveryPageLocator.readStoreDetails).getText();
 		waitForCondition().until(ExpectedConditions.visibilityOf(find(DeliveryPageLocator.collectHere))).click();
+		return address;
 	}
 
+	@Step
 	public String verifyCorrectCollectionPoint() {
 		return find(DeliveryPageLocator.verifylocation).getText();
 	}

@@ -15,6 +15,8 @@ import cucumber.api.java.en.When;
 import net.thucydides.core.annotations.Steps;
 
 public class ProductCheckoutSteps {
+	
+	public String address = "";
 
 	@Steps
 	HomePage homePage; 
@@ -100,12 +102,13 @@ public class ProductCheckoutSteps {
 
 	@Then("from the list, pick any collection point")
 	public void from_the_list_pick_any_collection_point() {
-		deliveryPage.pickAnyCollectionPoint();
+		this.address = deliveryPage.pickAnyCollectionPoint();
 	}
 
 	@And("Verify that correct collection point is selected")
 	public void verify_that_correct_collection_point_is_selected() {
-		deliveryPage.verifyCorrectCollectionPoint();
+		String localAddress = deliveryPage.verifyCorrectCollectionPoint();
+		Assert.assertEquals("Validate Selected Location",this.address.toUpperCase(),localAddress.toUpperCase());
 	}
 
 }

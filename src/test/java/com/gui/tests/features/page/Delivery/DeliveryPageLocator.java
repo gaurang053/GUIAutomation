@@ -6,5 +6,8 @@ public class DeliveryPageLocator {
 	static final String txtSelectCountry = "//div[text()='Address, postcode or city/town']/preceding-sibling::div/input";
 	static final String searchCollectionPoint = "//span[text()='Search for collection points']/parent::button";
 	static final String collectHere = "//span[text()='Collect here']/parent::button";
+	static final String clickShowDetails = "//span[text()='Collect here']/parent::button/preceding-sibling::div//button[text()='Store details']";
+	static final String readStoreDetails = "//span[text()='Collect here']/parent::button//preceding-sibling::div[2]//div[@data-auto-id='store-address']/div";
+	
 	static final String verifylocation = "//div[@data-auto-id='store-address']/div";
 }
