@@ -73,4 +73,7 @@ Please download > Test Report > Site Folder
 ![Test Report](TestReport.png)
 ![Test Report](TestReport2.png)
 
+If script failed then screenshot capture (Refer below screenshot)
+![Test Report](TestReportNegative.png)
+
 
