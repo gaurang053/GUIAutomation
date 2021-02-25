@@ -1,5 +1,5 @@
-# GUIAutomation - Application - Adidas Web Application
- Serenity-Selenium-Cucumber-Java
+# GUIAutomation
+Using Serenity-Selenium-Cucumber-Java
  
 # Getting started with Serenity and Cucumber
 Serenity BDD is a library that makes it easier to write high quality automated tests, with powerful reporting and living documentation features. It has strong support for both web testing with Selenium, and API testing using RestAssured.
