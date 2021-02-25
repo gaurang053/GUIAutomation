@@ -17,7 +17,7 @@ Serenity BDD is a library that makes it easier to write high quality automated t
 # Goal: 
 ```
 * To create a test automation framework skeleton for GUI Testing
-* To use modelling approach
+* To use page object modeling approach
 * To create demo for below use case
 ```
 
