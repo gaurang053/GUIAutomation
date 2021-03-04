@@ -41,7 +41,8 @@ public class DeliveryPage extends UIInteractionSteps {
 
 	@Step
 	public String verifyCorrectCollectionPoint() {
-		return find(DeliveryPageLocator.verifylocation).getText();
+		WebElement elelemnt = waitForCondition().until(ExpectedConditions.visibilityOf(find(DeliveryPageLocator.verifylocation)));
+		return elelemnt.getText();
 	}
 
 }

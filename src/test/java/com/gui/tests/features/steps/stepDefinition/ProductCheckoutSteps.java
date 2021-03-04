@@ -53,7 +53,7 @@ public class ProductCheckoutSteps {
 
 	@When("Pick any size and click on {string} button")
 	public void pick_any_size_and_click_on_button(String btnName) {
-		productPage.selectSize("4.5");
+		productPage.selectSize("7.5");
 		productPage.clickOnAddToBag(btnName);
 	}
 
